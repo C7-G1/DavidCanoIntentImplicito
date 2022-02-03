@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btNavegador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navegador"
+        android:onClick="onEjecutar"
+        app:layout_constraintBottom_toTopOf="@+id/btSMS"
+        app:layout_constraintEnd_toEndOf="@+id/btBateria"
+        app:layout_constraintStart_toStartOf="@+id/btBateria"
+        app:layout_constraintTop_toBottomOf="@+id/btBateria" />
+
+    <Button
+        android:id="@+id/btSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:onClick="onEjecutar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btNavegador"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/btNavegador"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <Button
+        android:id="@+id/btGaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Galeria"
+        android:onClick="onEjecutar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btSMS"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/btSMS"
+        app:layout_constraintTop_toBottomOf="@+id/btSMS"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Button
+        android:id="@+id/btMarcacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Marcacion"
+        android:onClick="onEjecutar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btGaleria"
+        app:layout_constraintStart_toStartOf="@+id/btGaleria"
+        app:layout_constraintTop_toBottomOf="@+id/btGaleria"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <Button
+        android:id="@+id/btLlamada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Llamada"
+        android:onClick="onEjecutar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btMarcacion"
+        app:layout_constraintStart_toStartOf="@+id/btMarcacion"
+        app:layout_constraintTop_toBottomOf="@+id/btMarcacion" />
+
+    <Button
+        android:id="@+id/btBateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bateria"
+        android:onClick="onEjecutar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+</androidx.constraintlayout.widget.ConstraintLayout>
